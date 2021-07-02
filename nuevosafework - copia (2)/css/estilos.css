@@ -1,0 +1,644 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    min-height: 100%;
+    
+}
+html{
+    height: 100%;
+}
+
+/*/////////////////navegacion///////////////////////*/
+.bg-morado{
+    background-color: #7250AA;
+}
+
+.nav-item{
+
+    padding-left:30px;
+    padding-right: 30px;
+    
+}
+.nav-item-button button{
+    background: #94B900;
+    border: black;
+    border-radius: 20px;
+   
+}
+.container-fluid{/*las letras*/
+    font-family:sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+#navbarNav{
+   
+    justify-content: center;
+   
+}
+.navbar-brand{
+   
+    width: 100px;
+    height: 70px;
+}
+.img-fluid{
+
+    width: 70px;
+}
+.navegacion{
+    grid-area: navegacion;
+
+    }
+.container-fluid{
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight:bolder;
+    }
+
+/*////////////////////////////////////////*/
+.grid-conteiner >*{
+    /*esto es para ver las secciones
+     box-shadow: -1px 1px 7px 0px black;
+    border-radius: 4px;
+    padding: 0px;
+    */
+   
+    
+
+}
+/*////////////////////////////////////////*/
+
+/*////////////////////////////////////////*/
+.imagen-principal{
+    grid-area: imgprincipal;
+
+
+}
+.imagen-principal img{
+width: 90%;
+height: 100%;
+
+}
+/*////////////////////////////////////////*/
+.bienvenidos{
+grid-area: bienvenida;
+
+
+}
+.bienvenidos .h1{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    color:#6B6969;
+}
+.bienvenidos .h2{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    color: #7250AA;
+
+}
+/*////////////////////////////////////////*/
+.google{
+grid-area: google;
+
+}
+.google img{
+width: 150px;
+height: 45px;
+}
+/*////////////////////////////////////////*/
+.apple{
+grid-area: apple;
+
+}
+.apple img{
+    width: 150px;
+    height: 45px;
+}
+/*////////////////////////////////////////*/
+.necesita-ayuda{
+    grid-area: ayuda;
+
+    color: white;
+    font-family: 'Lato', sans-serif;
+    
+    
+}
+.necesita-ayuda .h1{
+    border: 1px solid white;
+    margin: 10px 0px;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #7250AA;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+
+   
+}
+.necesita-ayuda .h2{
+    border: 1px solid white;
+    margin: 10px 0px;
+    font-size: 30px;
+    color:#6B6969;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+   
+}
+.necesita-ayuda .h3{
+    border: 1px solid white;
+    margin-top: 90px;
+    padding-bottom: 20px;
+    color: #7250AA;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+}
+.necesita-ayuda .p1{
+    border: 1px solid white;
+    font-size: 15px;
+    color:#6B6969;
+    font-family: 'Lato', sans-serif;
+}
+
+/*////////////////////////////////////////*/
+.carousel{
+    grid-area: carousel;
+ 
+}
+.carousel img{
+    width: 100%;   
+    height: 200px;
+ 
+}
+
+.carousel .caja1{
+    grid-area:caja1;
+  
+
+}
+.carousel .caja2{
+    grid-area:caja2;
+  
+}
+.carousel .caja3{
+    grid-area:caja3;
+
+}
+.carousel .caja4{
+    grid-area:caja4;
+   
+}
+.carousel div{
+  
+    width: 100%;
+    
+    padding: 10px;
+}
+.carousel div p{
+    text-align: left;
+    padding-left: 50px;
+    line-height: 1;
+}
+.carousel .texto{
+    height: 280px;
+}
+/*
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+*/
+.carousel button{
+    background-color:#94B900 ;
+    color: white;
+    padding: 10px 10px;
+    display: inline-block;
+    border-radius: 20px;
+
+
+}
+/*////////////////////////////////////////*/
+.footer{
+    grid-area: footer;
+    background: #5B5B5B;
+
+
+}
+.footer .caja1{
+    grid-area: caja1;
+
+    border-radius: 6px;
+
+}
+.footer .caja2{
+    grid-area: caja2;
+
+    border-radius: 6px;
+
+}
+.footer .caja3{
+    grid-area: caja3;
+
+    border-radius: 6px;
+
+}
+#safework{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    right: 40%;
+    margin-bottom: 20px;
+}
+#texto1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*/////////////////cuerpo///////////////////////*/
+.cuerpo{
+    grid-area: cuerpo;
+
+
+}
+.cuerpo div{
+  
+}
+.como-funciona{
+    grid-area: como-funciona;
+    text-align: left;
+}
+.como-funciona img{
+    width: 50%;
+    height: 80%;
+}
+
+.celular1{
+    grid-area: celular1;
+}
+.celular1 img{
+   width: 70%;
+   height: 90%;
+   max-width: 250px;
+}
+
+.detalle1{
+    grid-area: detalle1;
+}
+.detalle1 img{
+    width: 90%;
+    height: 60%;
+    margin-top: 100px;
+}
+.celular2{
+    grid-area: celular2;
+}
+.celular2 img{
+    width: 70%;
+    height: 90%;
+    max-width: 250px;
+}
+
+.detalle2{
+    grid-area: detalle2;
+}
+.detalle2 div{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.celular3{
+    grid-area: celular3;
+}
+.celular3 img{
+    width: 70%;
+    height: 90%;
+    max-width: 250px;
+}
+.detalle3{
+    grid-area: detalle3;
+}
+.detalle3 div{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.celular4{
+    grid-area: celular4;
+}
+.celular4 img{
+    width: 70%;
+    height: 90%;
+    max-width: 250px;
+}
+
+.detalle4{
+    grid-area: detalle4;
+}
+.detalle4 div{
+    margin-top: 50px;
+    
+}
+.nosotros{
+    grid-area: nosotros;
+    text-align: left;
+}
+.nosotros img{
+    width: 100%;
+    height: 80%;
+}
+
+.detalle-nosotros{
+    grid-area: detalle-nosotros;
+}
+.detalle-nosotros div{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.planes{
+    grid-area: planes;
+    text-align: left;
+}
+.planes img{
+    width: 100%;
+    height: 80%;
+}
+
+.premiun{
+    grid-area: premiun;
+}
+.premiun img{
+    width: 70%;
+    height: 80%;
+}
+.gratis{
+    grid-area: gratis;
+}
+.gratis img{
+    width: 70%;
+    height: 80%;
+}
+.trabaja-nosotros{
+    grid-area: trabaja-nosotros;
+}
+.trabaja-nosotros div{
+    margin-top: 30px;
+}
+.trabaja-nosotros div h1{
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+.postula{
+    grid-area: postula;
+}
+.postula div{
+    margin-top: 30px;
+    padding: 0px 30px;
+}
+.postula button{
+    background-color:#94B900 ;
+    color: white;
+    padding: 10px 10px;
+    display: inline-block;
+    border-radius: 20px;
+}
+/*////////////////////////////////////////*/
+#facebook{
+    width: 30px;
+}
+#instagran{
+    width: 30px;
+}
+.footer .caja2 h3{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.footer .caja2 p{
+line-height: 20px;
+}
+.footer .caja3 h3{
+   margin-top:20px;
+   margin-bottom: 40px;
+}
+.footer .caja3 p{
+    margin-left: 30px;
+    text-align: left;
+}
+.footer .caja3 img{
+   height: 30px;
+   width: 30px; 
+}
+/*////////////////////////////////////////*/
+.grid-conteiner{
+    display: grid;
+    /*esto le da espacios
+     gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    */
+   
+    grid-template:
+
+    "navegacion" 100px
+    "imgprincipal"250px
+    "bienvenida" 160px
+    "google" 55px
+    "apple" 70px
+    "ayuda"320px
+    "carousel"600px
+    "cuerpo" 3800px
+    "footer"900px;
+    
+}
+.footer{
+    /* margin: 10px;
+    padding: 10px;
+    display: grid;*/
+    
+    gap: 10px;
+   
+    grid-template:
+    "caja1"300px
+    "caja2"240px
+    "caja3"250px ;
+
+}
+.cuerpo{
+    display: grid;
+    /*     gap: 10px;
+    margin: 10px;
+    padding: 10px;*/
+
+    grid-template:
+    "como-funciona como-funciona"200px
+    "celular1 detalle1" 400px
+    "detalle2 celular2"400px
+    "celular3 detalle3"400px
+    "detalle4 celular4"400px
+    "nosotros nosotros"200px
+    "detalle-nosotros detalle-nosotros"300px
+    "planes planes"120px
+    "premiun premiun"400px
+    "gratis  gratis"400px
+    "trabaja-nosotros trabaja-nosotros "200px
+    "postula postula"200px/
+     50% 50%
+    ;
+
+}
+/*///////////////////carousel/////////////////////*/
+.carousel{
+    display: grid;
+    /*
+     gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    */
+   
+    grid-template:
+    "caja1 caja2 caja3 caja4"550px ;
+
+}
+
+
+/*///////////////////carousel/////////////////////*/
+@media(min-width:800px){
+    .grid-conteiner{
+        grid-template:
+        "navegacion navegacion navegacion "100px
+        "imgprincipal bienvenida bienvenida " 200px 
+        "imgprincipal  google   apple " 100px
+        "ayuda         ayuda     ayuda"300px
+        "carousel   carousel carousel "600px
+        "cuerpo    cuerpo    cuerpo" 3360px
+        "footer     footer    footer" 450px/
+          50%   25% auto;
+    }
+    /*////////////////////////////////////////*/
+    .imagen-principal img{
+
+        width: 90%;
+        height: 100%;
+        
+    }
+    /*////////////////////////////////////////*/
+    .footer{
+        display: grid;
+        /*
+        gap: 10px;
+        margin: 10px;
+        padding: 10px;
+        */
+        
+        grid-template:
+        "caja1 caja2 caja3"400px/
+         33% 33% 33%;
+    
+    }
+    .cuerpo{
+        /*
+           gap: 10px;
+        margin: 10px;
+        padding: 10px;
+        */
+     
+        grid-template:
+        "como-funciona como-funciona como-funciona"220px
+        "celular1 detalle1 detalle1" 520px
+        "detalle2 celular2 celular2"520px
+        "celular3 detalle3 detalle3"520px
+        "detalle4 celular4 celular4"520px
+        "nosotros detalle-nosotros detalle-nosotros"400px
+        "planes premiun gratis"300px
+        "trabaja-nosotros postula postula"200px/
+        50% 25% 25%
+    
+    
+        ;
+
+    }
+    .nosotros img{
+        width: 90%;
+        height: 80%;
+    }
+    .planes img{
+        margin-top: 20px;
+        width: 100%;
+        height: 60%;
+    }
+
+
+
+    /*////////////////////////////////////////*/
+
+    .apple img{
+        width: 250px;
+        height: 60px;
+    }
+    .google img{
+        width: 250px;
+        height: 60px;
+        }
+    /*////////////////////////////////////////*/
+
+}
+@media(max-width:1200px){
+    .carousel .caja4{
+        display:none ;
+    }
+    
+  .carousel{
+    display: grid;
+    gap: 10px;
+    margin: 30px;
+    padding: 20px;
+    grid-template:
+    "caja1 caja2 caja3"550px ;
+
+}
+}
+@media(max-width:900px){
+    .carousel .caja4{
+        display:none ;
+    }
+    .carousel .caja3{
+        display:none ;
+    }
+  .carousel{
+    display: grid;
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    grid-template:
+    "caja1 caja2"550px ;
+
+}
+}
+@media(max-width:500px){
+    .carousel .caja4{
+        display:none ;
+    }
+    .carousel .caja3{
+        display:none ;
+    }
+    .carousel .caja2{
+        display:none ;
+    }
+  .carousel{
+    display: grid;
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    grid-template:
+    "caja1 "550px;
+
+}
+}
